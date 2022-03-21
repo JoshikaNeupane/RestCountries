@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-fluid">
+    <h2 class="font-weight-bold">REST Countries</h2>
+    <p class="text-primary">
+    This is a demo app that consumes public rest and displays data in interactive javascript grid. <br />
+        <strong class="text-success">Please brouse <a asp-action="Countries"> 'Countries'</a> page to see feature in action</strong>
+    </p>
+
+    <h4>Summary:</h4>
+    <ul class="text-dark">
+        <li> Consumes public API <a class="font-weight-bold" href="https://restcountries.com/v3.1/all" title="click to view API">  Rest Countries</a> using <b> HttpClient </b> to get json response</li>
+        <li> Map 'RestCountries' response into list of <b> Country</b> (Locally created class to represent Country)</li>
+        <li> Consumes third party js library <a href="http://tabulator.info/docs/5.1" class="font-weight-bold" title="Click to view docs">Tabulator</a> to display data in a grid</li>
+        <li> Setup tabulator grid to display list of countries</li>
+        <li> Display flag as an image, Image url will come from API</li>
+        <li> Setup column chooser, so user can view or hide individual column</li>
+        <li> Consumes font-awesome library to display icons</li>
+        <li> Displays Loading screen while loading data</li>
+    </ul>
+
+    <h4>Dependencies:</h4>
+    <ul class="text-dark">
+        <li> Framework: ASP .NET Core MVC 3.1</li>
+        <li> Language: C#, JavaScript</li>
+        <li> CSS Library: Bootstrap</li>
+        <li> Font Library: Font-Awesome</li>
+        <li> Grid Library: Tabulator</li>
+        <li> Data API: Rest Countries</li>
+        <li> Rest Communication: HttpClient (C#)</li>
+        <li> Database: None</li>
+    </ul>
+</div>
