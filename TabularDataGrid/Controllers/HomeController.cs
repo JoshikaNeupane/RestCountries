@@ -13,8 +13,8 @@ namespace Countries.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly DataProvider _dataProvider;
-       
 
+        private int test = 0;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -28,7 +28,15 @@ namespace Countries.Controllers
 
         public IActionResult Countries()
         {
+            int x = test;
+            increment();
+            int y = test;
             return View();
+        }
+
+        private void increment()
+        {
+            test++;
         }
 
         /// <summary>
