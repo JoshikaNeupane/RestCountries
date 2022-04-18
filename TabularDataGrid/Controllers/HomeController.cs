@@ -29,14 +29,14 @@ namespace Countries.Controllers
         public IActionResult Countries()
         {
             int x = test;
-            increment();
+            mult();
             int y = test;
             return View();
         }
 
-        private void increment()
+        private void mult()
         {
-            test++;
+            test=test*test;
         }
 
         /// <summary>
